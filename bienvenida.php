@@ -16,6 +16,7 @@ include("includes/header.php");
     justify-content: center;
     position: relative;
     overflow: hidden;
+    padding: 2rem;
 }
 
 .main-box {
@@ -25,7 +26,7 @@ include("includes/header.php");
     padding: 3rem 2.5rem;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
     text-align: center;
-    max-width: 480px;
+    max-width: 500px;
     width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.2);
     animation: fadeInScale 0.8s ease-out;
@@ -43,7 +44,7 @@ include("includes/header.php");
 }
 
 .main-box h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 1rem;
     background: linear-gradient(135deg, #667eea, #764ba2);
@@ -71,12 +72,28 @@ include("includes/header.php");
     border: none;
     border-radius: 12px;
     text-decoration: none;
-    display: inline-block;
     transition: all 0.3s ease;
+    display: inline-block;
+    margin-bottom: 1rem;
 }
 .btn-logout:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+}
+
+.link-pass {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #555;
+}
+.link-pass a {
+    color: #667eea;
+    font-weight: 600;
+    text-decoration: none;
+}
+.link-pass a:hover {
+    color: #764ba2;
 }
 </style>
 
@@ -88,6 +105,9 @@ include("includes/header.php");
       Has iniciado sesión exitosamente.
     </div>
     <a href="logout.php" class="btn-logout">Cerrar sesión</a>
+    <div class="link-pass">
+      ¿Olvidaste tu contraseña? <a href="cambiar_contraseña.php">Cambiar contraseña</a>
+    </div>
   </div>
 </div>
 
